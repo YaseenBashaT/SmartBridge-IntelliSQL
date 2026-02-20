@@ -1,52 +1,194 @@
-# SQL-LLM
+# IntelliSQL: Intelligent SQL Querying with Gemini Pro
 
-A small Python project providing a compact starting point for working with SQL from a simple Python app. It includes an entry script and a small helper module for interacting with databases.
+**IntelliSQL** is an innovative database querying tool designed to bridge the gap between natural language and structured data. By leveraging the **Gemini 1.5 Flash model**, it enables even non-technical users to extract meaningful insights from a SQLite database simply by asking questions in plain English.
 
-## Features
+This project simplifies data access, enhances productivity, and makes database interaction more intuitive.
 
-- Minimal, easy-to-read code structure
-- Simple instructions to get started locally
+---
 
-## Requirements
+## 🚀 Features
 
-- Python 3.10+
-- See `requirements.txt` for Python dependencies
+### ✅ Text-to-SQL Translation
 
-## Installation
+Converts natural language questions into accurate SQL queries using advanced LLM capabilities.
 
-1. Create and activate a virtual environment:
+### ✅ Regex Sanitization Layer
+
+A custom logic layer cleans AI responses so that only valid and safe SQL queries are executed.
+
+### ✅ Interactive Dashboard
+
+Streamlit-based professional UI with:
+
+* Dark mode support
+* Sidebar navigation
+* Clean structured data tables
+
+### ✅ Secure Configuration
+
+Sensitive API keys are securely handled using:
+
+* `.env` files
+* `python-dotenv`
+
+### ✅ Real-time Query Results
+
+Instant rendering of database records in a structured, readable format.
+
+---
+
+## 🛠️ Technology Stack
+
+**Frontend:**
+
+* Streamlit
+
+**Backend:**
+
+* Python
+* Google Generative AI SDK
+
+**Database:**
+
+* SQLite
+
+**AI Model:**
+
+* Gemini 1.5 Flash
+
+---
+
+## 📂 Project Structure
+
+```
+IntelliSQL/
+├── .venv/                # Virtual environment
+├── Project Files/        # Core application files
+│   ├── .env              # API key storage
+│   ├── app.py            # Streamlit UI & AI logic
+│   ├── sql.py            # Database setup & seeding
+│   ├── data.db           # SQLite database
+│   └── requirements.txt  # Dependencies
+└── README.md             # Documentation
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Shaik-Mohammad-Ashfaq/IntelliSQL.git
+cd IntelliSQL
+```
+
+---
+
+### 2️⃣ Create Virtual Environment
 
 ```bash
 python -m venv .venv
+```
+
+Activate environment:
+
+**Windows:**
+
+```bash
 .venv\Scripts\activate
 ```
 
-2. Install dependencies:
+**Mac/Linux:**
 
 ```bash
-pip install -r requirements.txt
+source .venv/bin/activate
 ```
 
-## Usage
+---
 
-Run the main app:
+### 3️⃣ Install Dependencies
 
 ```bash
-python -m streamlit run app.py
+pip install -r "Project Files/requirements.txt"
 ```
 
-Run `python app.py --help` for available options if implemented.
+---
 
-## File Overview
+### 4️⃣ Configure API Key
 
-- `app.py` - Project entrypoint / example runner
-- `sql.py` - Database helper functions and small SQL utilities
-- `requirements.txt` - Python dependencies
+Create a `.env` file inside **Project Files** folder:
 
-If you add configuration (database connection strings, credentials), prefer using environment variables or a separate config file not checked into source control.
+```
+GOOGLE_API_KEY="your_google_gemini_api_key"
+```
 
-## Contributing
+---
 
-Contributions are welcome. Open an issue or submit a pull request with a clear description of the change.
+### 5️⃣ Initialize Database
 
+```bash
+python "Project Files/sql.py"
+```
+
+---
+
+### 6️⃣ Run the Application
+
+```bash
+streamlit run "Project Files/app.py"
+```
+
+---
+
+## 👥 Team Members & Roles
+
+**Team ID:** LTVIP2026TMIDS66076
+**Team Size:** 4
+
+### 🔹 Thammisetty Chaitanya (Team Leader)
+
+**Role:** AI Specialist & Project Manager
+
+* Integrated Gemini AI model
+* Oversaw architecture and development workflow
+
+### 🔹 Thippaluri Yaseen Basha
+
+**Role:** Backend Developer & Data Engineer
+
+* Developed SQLite database structure
+* Implemented query execution pipeline
+
+### 🔹 Ummaneni Naga Pravallika
+
+**Role:** Frontend Developer & UI/UX Designer
+
+* Designed Streamlit interface
+* Built user-friendly dashboard features
+
+### 🔹 Vuppala Vaishnavi
+
+**Role:** QA Engineer & Documentation Specialist
+
+* Tested query accuracy and sanitization
+* Prepared documentation and reports
+
+---
+
+## ⚠️ Known Issues
+
+* Complex multi-table joins may occasionally produce inaccurate SQL if schema context is unclear.
+* Requires active internet connection for Gemini API access.
+
+---
+
+## 🌟 Future Enhancements
+
+* Multi-database support (MySQL/PostgreSQL)
+* Query explanation feature
+* Voice-based natural language queries
+* Improved schema-aware prompt engineering
+
+---
 
