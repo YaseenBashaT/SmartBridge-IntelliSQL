@@ -1,5 +1,39 @@
 # IntelliSQL: Intelligent SQL Querying with Gemini Pro
+## 👥 Team Members & Roles
 
+**Team ID:** LTVIP2026TMIDS66076
+**Team Size:** 4
+
+### 🔹 Thammisetty Chaitanya (Team Leader)
+
+**Role:** AI Specialist & Project Manager
+
+* Integrated Gemini AI model
+* Oversaw architecture and development workflow
+
+### 🔹 Thippaluri Yaseen Basha
+
+**Role:** Backend Developer & Data Engineer
+
+* Developed SQLite database structure
+* Implemented query execution pipeline
+
+### 🔹 Ummaneni Naga Pravallika
+
+**Role:** Frontend Developer & UI/UX Designer
+
+* Designed Streamlit interface
+* Built user-friendly dashboard features
+
+### 🔹 Vuppala Vaishnavi
+
+**Role:** QA Engineer & Documentation Specialist
+
+* Tested query accuracy and sanitization
+* Prepared documentation and reports
+
+---
+**Problem Statement**
 **IntelliSQL** is an innovative database querying tool designed to bridge the gap between natural language and structured data. By leveraging the **Gemini 1.5 Flash model**, it enables even non-technical users to extract meaningful insights from a SQLite database simply by asking questions in plain English.
 
 This project simplifies data access, enhances productivity, and makes database interaction more intuitive.
@@ -141,40 +175,7 @@ streamlit run "Project Files/app.py"
 
 ---
 
-## 👥 Team Members & Roles
 
-**Team ID:** LTVIP2026TMIDS66076
-**Team Size:** 4
-
-### 🔹 Thammisetty Chaitanya (Team Leader)
-
-**Role:** AI Specialist & Project Manager
-
-* Integrated Gemini AI model
-* Oversaw architecture and development workflow
-
-### 🔹 Thippaluri Yaseen Basha
-
-**Role:** Backend Developer & Data Engineer
-
-* Developed SQLite database structure
-* Implemented query execution pipeline
-
-### 🔹 Ummaneni Naga Pravallika
-
-**Role:** Frontend Developer & UI/UX Designer
-
-* Designed Streamlit interface
-* Built user-friendly dashboard features
-
-### 🔹 Vuppala Vaishnavi
-
-**Role:** QA Engineer & Documentation Specialist
-
-* Tested query accuracy and sanitization
-* Prepared documentation and reports
-
----
 
 ## ⚠️ Known Issues
 
