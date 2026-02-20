@@ -34,6 +34,8 @@
 
 ---
 **Problem Statement**
+
+
 **IntelliSQL** is an innovative database querying tool designed to bridge the gap between natural language and structured data. By leveraging the **Gemini 1.5 Flash model**, it enables even non-technical users to extract meaningful insights from a SQLite database simply by asking questions in plain English.
 
 This project simplifies data access, enhances productivity, and makes database interaction more intuitive.
